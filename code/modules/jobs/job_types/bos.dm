@@ -436,7 +436,7 @@ Paladin
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Senior Paladin and Head Paladin"
 	selection_color = "#95a5a6"
-	exp_requirements = 450
+	exp_requirements = 180 //Slightly higher than other "base" roles due to having the big guns
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //R91
@@ -607,7 +607,7 @@ Scribe
 	supervisors = "the Senior Scribe and Head Scribe"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 120
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea,
@@ -775,7 +775,7 @@ Knight
 	supervisors = "the Senior Knight, and Head Knight"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 120
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9
