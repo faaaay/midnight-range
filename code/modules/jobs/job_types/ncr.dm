@@ -18,7 +18,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	department_flag = NCR
 	selection_color = "#ffeeaa"
 	faction = FACTION_NCR
-	exp_type = EXP_TYPE_NCR
+	exp_type = EXP_TYPE_FALLOUT
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
@@ -153,7 +153,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 2000
+	exp_requirements = 1500
+	exp_type = EXP_TYPE_NCR
 
 	loadout_options = list(
 		/datum/outfit/loadout/elcapitan,	// Service Rifle
@@ -229,7 +230,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
-	exp_requirements = 1500
+	exp_requirements = 900
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -352,6 +353,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
 	total_positions = 0
 	spawn_positions = 0
+	exp_type = EXP_TYPE_NCR
+	exp_requirements = 900
 	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
 	supervisors = "The Captain and the NCR"
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
@@ -435,7 +438,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	outfit = /datum/outfit/job/ncr/f13vetranger
-	exp_requirements = 1500
+	exp_type = EXP_TYPE_NCR
+	exp_requirements = 900
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
 		/datum/outfit/loadout/vrclassic, // AMR, Sequoia
@@ -632,7 +636,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
-	exp_requirements = 750
+	exp_requirements = 600
 
 /datum/outfit/job/ncr/f13heavytrooper	// R84 LMG, 9mm sidearm, Bayonet, Heavy armor
 	name = "NCR Heavy Trooper"
@@ -662,6 +666,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13COMBATENGINEER
 	total_positions = 1
 	spawn_positions = 1
+	exp_requirements = 300
 	description = "You are a senior enlisted trooper with an engineering skill set. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
@@ -759,7 +764,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
-	exp_requirements = 300
+	exp_requirements = 600
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Military baton
 	name = "NCR Military Police"
@@ -795,6 +800,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13COMBATMEDIC
 	total_positions = 1
 	spawn_positions = 1
+	exp_requirements = 300
 	description = "You are a senior enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
 	selection_color = "#fff5cc"
@@ -848,6 +854,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	flag = F13CORPORAL
 	total_positions = 2
 	spawn_positions = 2
+	exp_requirements = 120
 	description = "You are a junior NCO, expected to help keep the troopers organized and follow the orders of your lord and savíour, the sergeant."
 	supervisors = "Sergeant and above"
 	selection_color = "#fff5cc"
@@ -980,7 +987,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
-	exp_requirements = 1500
+	exp_requirements = 900
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/ncr,
@@ -1037,7 +1044,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
-	exp_requirements = 1500
+	exp_requirements = 900
 
 /datum/outfit/job/ncr/f13logisticsofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

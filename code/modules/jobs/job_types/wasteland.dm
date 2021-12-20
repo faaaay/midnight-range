@@ -1,5 +1,6 @@
 /datum/job/wasteland
 	department_flag = WASTELAND
+	exp_type = EXP_TYPE_FALLOUT
 
 /datum/job/wasteland/enclavespy
 	title = "Enclave Private"
@@ -12,7 +13,6 @@
 	enforces = ""
 	supervisors = "the United States Government."
 	selection_color = "#323232"
-	exp_type = EXP_TYPE_FALLOUT
 	exp_requirements = 1200
 
 	access = list(ACCESS_ENCLAVE)
@@ -836,7 +836,6 @@ Raider
 	supervisors = "The Boss."
 	selection_color = "#ff4747"
 	exp_requirements = 600
-	exp_type = EXP_TYPE_WASTELAND
 
 	outfit = /datum/outfit/job/wasteland/f13enforcer
 
@@ -1076,7 +1075,7 @@ Raider
 	description = "The mob rules in Yuma, and you're on top. Keeping the loose association of Khans, outlaws, and other no-goods together you maintain order in The Den by force. Ensure that all inhabitants of the Den obey their rules, and spread your influence over the wasteland. Be careful though - even your own men can't be trusted."
 	supervisors = "Whatever god you pray to. Sky's the limit!"
 	selection_color = "#ff4747"
-	exp_requirements = 1000
+	exp_requirements = 900
 	exp_type = EXP_TYPE_OUTLAW
 
 	outfit = /datum/outfit/job/wasteland/f13mobboss
@@ -1147,8 +1146,7 @@ datum/job/wasteland/f13dendoctor
 	description = "While you prioritize providing medical treatment in emergency situations, you are still trained in combat and have the additional role as a loyal combanteer to the Den."
 	supervisors = "The Boss."
 	selection_color = "#ff4747"
-	exp_requirements = 1000
-	exp_type = EXP_TYPE_OUTLAW
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/wasteland/f13dendoctor
 

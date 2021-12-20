@@ -11,7 +11,7 @@ Main doors: ACCESS_CAPTAIN 20
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	outfit = /datum/outfit/job/bos/
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_type = EXP_TYPE_FALLOUT
 
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
 
@@ -57,6 +57,7 @@ Elder
 	req_admin_notify = 1
 
 	exp_requirements = 3000
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	total_positions = 0
 	spawn_positions = 0
@@ -103,7 +104,8 @@ Head Paladin
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/sentstand, //Tribeam laser
@@ -200,7 +202,8 @@ Head Scribe
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/hsstand,
@@ -268,7 +271,8 @@ Head Knight
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 1200
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //Wattz 2k
@@ -349,8 +353,7 @@ Star Paladin
 	supervisors = "the Head Paladin"
 	selection_color = "#95a5a6"
 
-	exp_requirements = 750
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_requirements = 900
 
 	loadout_options = list(
 		/datum/outfit/loadout/spaladina, //R91 Assault Rifle
@@ -879,7 +882,7 @@ Initiate
 	selection_color = "#95a5a6"
 
 	exp_type = EXP_TYPE_FALLOUT
-	exp_requirements = 300
+	exp_requirements = 120
 
 	loadout_options = list(
 	/datum/outfit/loadout/initiatek, //AEP7 and Engibelt with combat armor, no helmet
@@ -962,7 +965,7 @@ Off-Duty
 	supervisors = "your superior rank."
 	selection_color = "#95a5a6"
 
-	exp_requirements = 300
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 

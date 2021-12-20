@@ -16,7 +16,7 @@ Mayor
 */
 
 /datum/job/oasis
-	exp_type = EXP_TYPE_OASIS
+	exp_type = EXP_TYPE_FALLOUT
 	faction = FACTION_OASIS
 
 /datum/job/oasis/f13mayor
@@ -29,7 +29,8 @@ Mayor
 	description = "You are the benevolent tyrant of Oasis, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
 
-	exp_requirements = 1500
+	exp_requirements = 900
+	exp_type = EXP_TYPE_OASIS
 
 	outfit = /datum/outfit/job/den/f13mayor
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -83,7 +84,7 @@ Mayor
 	supervisors = "The Mayor"
 	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
 	selection_color = "#d7b088"
-	exp_requirements = 800
+	exp_requirements = 450
 
 	outfit = /datum/outfit/job/den/f13secretary
 	
@@ -158,7 +159,7 @@ Mayor
 	supervisors = "Oasis Government"
 	description = "You are the Mayor's best friend, you helped them get where they are. While they handle civil matters, you've been rewarded with more hands-on work, as preferred. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/den/f13sheriff
 	
@@ -244,9 +245,7 @@ Mayor
 	supervisors = "Oasis Police Department"
 	description = "You've passed the training and tests to join the OPD, and your loyalty to the Chief is absolute - this is your new home, your family. This oasis of civilization will not fall as long as you breathe. Protect its citizens and property, for that is your new purpose."
 	selection_color = "#dcba97"
-	exp_requirements = 12
-	exp_type = EXP_TYPE_OASIS
-	exp_requirements = 600
+	exp_requirements = 300
 
 	loadout_options = list(
 	/datum/outfit/loadout/frontierjustice,
@@ -852,7 +851,7 @@ Mayor
 	supervisors = "free hand of the market"
 	description = "The greed of the United States survived better than its people. You are an organ of this greed. Ensure its continuation."
 	selection_color = "#dcba97"
-	exp_requirements = 600
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/den/f13shopkeeper
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
