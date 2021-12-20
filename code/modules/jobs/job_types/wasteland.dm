@@ -1147,7 +1147,7 @@ datum/job/wasteland/f13dendoctor
 	description = "While you prioritize providing medical treatment in emergency situations, you are still trained in combat and have the additional role as a loyal combanteer to the Den."
 	supervisors = "The Boss."
 	selection_color = "#ff4747"
-	exp_requirements = 1000
+	exp_requirements = 120 //If you've played Outlaw, you know enough for this.
 	exp_type = EXP_TYPE_OUTLAW
 
 	outfit = /datum/outfit/job/wasteland/f13dendoctor
