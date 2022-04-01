@@ -4,15 +4,14 @@
 
 //Base Deathclaw
 /mob/living/simple_animal/hostile/deathclaw
-	name = "deathclaw"
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match."
+	name = "funclaw"
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. You're fairly certain this one has no sexual intentions whatsoever and respects women."
 	icon = 'icons/fallout/mobs/monsters/deathclaw.dmi'
 	icon_state = "deathclaw"
 	icon_living = "deathclaw"
 	icon_dead = "deathclaw_dead"
 	icon_gib = "deathclaw_gib"
 	maxHealth = 750
-
 	speed = -1
 	health = 600
 	obj_damage = 200
@@ -24,7 +23,7 @@
 	a_intent = INTENT_HARM //So we can not move past them.
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	robust_searching = TRUE
-	speak = list("ROAR!","Rawr!","GRRAAGH!","Growl!")
+	speak = list("TRANS RIGHTS! TRANS WOMEN ARE WOMEN! TRANS MEN ARE MEN!","Hypocrite that you are, that you trust the chemicals in your brain to tell you that they are chemicals.","There can be no peace until every last landlord is dead.","All cats are beautiful.")
 	speak_emote = list("growls", "roars")
 	emote_hear = list("grumbles.","grawls.")
 	emote_taunt = list("stares ferociously", "stomps")
@@ -64,8 +63,8 @@
 
 // Mother death claw
 /mob/living/simple_animal/hostile/deathclaw/mother
-	name = "mother deathclaw"
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one is an angry mother."
+	name = "girlboss funclaw"
+	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. This one fought against the gender ceiling for years and punched down at as many struggling female deathclaws to achieve power similar to that of the most powerful males. Was it worth it?"
 	gender = FEMALE
 	maxHealth = 800
 	health = 800
