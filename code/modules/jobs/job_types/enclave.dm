@@ -7,8 +7,8 @@
 	access = list(ACCESS_ENCLAVE)
 	minimal_access = list(ACCESS_ENCLAVE)
 	selection_color = "#aaaaf7"
-	forbids = "Enclave taboos: Fraternizing with outsiders beyond what is absolutly necessary. Aiding Brotherhood members in any way no matter how small."
-	enforces = "Enclave rules: Stay in uniform. Act mature and respectful. Obey orders and always remember you are fighting for the only true legitimate power in this land of savages. Wearing gasmasks outside the compound is encouraged but not required."
+	forbids = "Enclave taboos: Fraternizing with subversive groups like the Legion and Brotherhood. Aiding Brotherhood members in any way no matter how small."
+	enforces = "Enclave rules: Stay in uniform. Act mature and respectful - you're the pride of the US Army. Above all else, do not compromise the mission. Screaming about \"mutie scum\" is a fine way to get yourself, and the last bastion of civility here, killed."
 	objectivesList = list("Department of Defense advisory: Collect resources and produce more Patribots, attrition is depleting our reserves.","Department of Defense advisory: Establish checkpoints to show presence, they must not forget who is the legitimate goverment.")
 
 /datum/outfit/job/enclave
@@ -48,14 +48,6 @@
 	..()
 	if(visualsOnly)
 		return
-	if(H.gender == FEMALE)
-		H.gender = MALE
-		H.real_name = random_unique_name(MALE)
-		H.name = H.real_name
-		if(H.wear_id)
-			var/obj/item/card/id/dogtag/L = H.wear_id
-			L.registered_name = H.name
-			L.update_label()
 
 
 PEACEKEEPERS
@@ -67,8 +59,8 @@ PEACEKEEPERS
 	flag = F13ECOMMANDER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are one of the last remaining officers in charge of the remaining Enclave. You have ultimate authority but do not micromanage when not needed, and make sure any executions have a witness and documentation to avoid being court martialed. Your main directive is to ensure the prosperity of these remnants through any means necessary."
-	supervisors = "the US goverment."
+	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and Senate, but you are often the highest authority when out in the field. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
+	supervisors = "Captain and your own American heart"
 	display_order = JOB_DISPLAY_ORDER_EOFFICER
 	exp_requirements = 4800
 	exp_type = EXP_TYPE_ENCLAVE
@@ -103,12 +95,12 @@ PEACEKEEPERS
 
 //Armored Trooper
 /datum/job/enclave/peacekeeper/armoredtrooper
-	title = "Enclave Armored Trooper"
+	title = "Enclave Heavy"
 	flag = F13EATROOPER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You serve as the backbone of the remaining Enclave combat forces, your service to the Enclave has given you the right to wear the most advanced power armor in the Yuma Wasteland. One of the most prized assets, your survival is paramount to the success of the organization as a whole."
-	supervisors = "Enclave Lieutenant"
+	description = "You serve as the backbone of the remaining Enclave combat forces. You may not have your own set of power armour as you once did, but you still have better equipment than the rank-and-file troopers. Keep them in line, and remember, you're often the face of the US Army."
+	supervisors = "Enclave officers"
 	display_order = JOB_DISPLAY_ORDER_EATROOPER
 	exp_requirements = 3000
 	exp_type = EXP_TYPE_ENCLAVE
@@ -163,8 +155,8 @@ PEACEKEEPERS
 	flag = F13ETROOPER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You make up the majority of the Enclave's last remaining combat forces. While you are trained to wear power armor, your superiors have not yet deemed you fit to wear a suit of armor. Serve with honor and dedication."
-	supervisors = "Enclave Armored Troopers, Enclave Lieutenant"
+	description = "You make up the majority of the Enclave's last remaining combat forces. While you are trained to wear power armor, that's a luxury in short supply. Serve with honor and dedication."
+	supervisors = "Enclave officers and the Sergeant"
 	display_order = JOB_DISPLAY_ORDER_ETROOPER
 	outfit = /datum/outfit/job/enclave/peacekeeper/trooper
 
@@ -218,8 +210,8 @@ PEACEKEEPERS
 	flag = F13ESCIENTIST
 	total_positions = 0
 	spawn_positions = 0
-	description = "Responsible for logistics, surgeries, and manufacturing. May not leave the compound perimeter without express orders from the Officer."
-	supervisors = "The Enclave Officer."
+	description = "You are a non-combatant with extensive knowledge of science and technology. You maintain and improve both the Troops and their equipment."
+	supervisors = "Enclave officers"
 	display_order = JOB_DISPLAY_ORDER_ESCIENTIST
 	outfit = /datum/outfit/job/enclave/noncombat/escientist
 
@@ -242,4 +234,3 @@ PEACEKEEPERS
 	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-
