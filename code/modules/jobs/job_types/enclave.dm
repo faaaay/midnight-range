@@ -258,7 +258,7 @@ PEACEKEEPERS
 
 /datum/outfit/loadout/recstandard
 	name = "Standard Recruit"
-	backpack_contents = list
+	backpack_contents = list(
 		(/obj/item/clothing/accessory/ncr/REC
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
@@ -273,6 +273,25 @@ PEACEKEEPERS
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/ammo_casing/energy/plasma/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec=2,)
+
+/datum/job/enclave/peacekeeper/intelofficer
+	title = "Enclave Trooper"
+	flag = F13ETROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You make up the majority of the Enclave's last remaining combat forces. While you are trained to wear power armor, that's a luxury in short supply. Serve with honor and dedication."
+	supervisors = "Enclave officers and the Sergeant"
+	display_order = JOB_DISPLAY_ORDER_ETROOPER
+	outfit = /datum/outfit/job/enclave/peacekeeper/intelofficer
+
+/datum/outfit/job/enclave/peacekeeper/trooper
+	name = "Enclave Trooper"
+	jobtype = /datum/job/enclave/peacekeeper/trooper
+	head = /obj/item/clothing/head/helmet/f13/combat/enclave
+	suit = /obj/item/clothing/suit/armor/f13/combat/enclave
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,)
 
 //NON-COMBATANTS
 
