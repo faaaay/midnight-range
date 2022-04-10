@@ -52,27 +52,26 @@
 
 PEACEKEEPERS
 
-
-//Enclave Lieutenant
-/datum/job/enclave/peacekeeper/officer
+//Enclave Captain (1 slot, commands from the base)
+/datum/job/enclave/peacekeeper/ecaptain
 	title = "Enclave Lieutenant"
 	flag = F13ECOMMANDER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and Senate, but you are often the highest authority when out in the field. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
-	supervisors = "Captain and your own American heart"
+	supervisors = "what remains of Enclave high command and your own American heart"
 	display_order = JOB_DISPLAY_ORDER_EOFFICER
 	exp_requirements = 4800
 	exp_type = EXP_TYPE_ENCLAVE
-	outfit = /datum/outfit/job/enclave/peacekeeper/officer
+	outfit = /datum/outfit/job/enclave/peacekeeper/officer/captain
 
-/datum/outfit/job/enclave/peacekeeper/officer/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/peacekeeper/ecaptain/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 
-/datum/outfit/job/enclave/peacekeeper/officer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/peacekeeper/ecaptain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -80,8 +79,8 @@ PEACEKEEPERS
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 
-/datum/outfit/job/enclave/peacekeeper/officer
-	name = "Enclave Lieutenant"
+/datum/outfit/job/enclave/peacekeeper/officer/captain
+	name = "Enclave Captain"
 	jobtype =		/datum/job/enclave/peacekeeper/officer
 	id = 			/obj/item/card/id/dogtag/enclave/officer
 	head =			/obj/item/clothing/head/helmet/f13/helmet/enclave/officer
@@ -91,15 +90,67 @@ PEACEKEEPERS
 		/obj/item/storage/bag/money/small/oasis = 1,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 3,
-		/obj/item/melee/powered/ripper/prewar = 1,)
+		/obj/item/melee/powered/ripper = 1,)
 
-//Armored Trooper
+//Enclave Lieutenant (1 slot, field commander)
+/datum/job/enclave/peacekeeper/elieutenant
+	title = "Enclave Lieutenant"
+	flag = F13ECOMMANDER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and Senate, but you are often the highest authority when out in the field. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
+	supervisors = "the Captain and whatever remains of high command"
+	display_order = JOB_DISPLAY_ORDER_EOFFICER
+	exp_requirements = 4800
+	exp_type = EXP_TYPE_ENCLAVE
+	outfit = /datum/outfit/job/enclave/peacekeeper/officer
+
+/datum/outfit/job/enclave/peacekeeper/elieutenant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+
+/datum/outfit/job/enclave/peacekeeper/elieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
+
+/datum/outfit/job/enclave/peacekeeper/elieutenant
+	name = "Enclave Lieutenant"
+	jobtype =		/datum/job/enclave/peacekeeper/officer
+	id = 			/obj/item/card/id/dogtag/enclave/officer
+	head =			/obj/item/clothing/head/helmet/f13/helmet/enclave/officer
+	uniform = 		/obj/item/clothing/under/f13/enclave_officer
+	head =          /obj/item/clothing/head/helmet/f13/combat/enclave
+	suit =          /obj/item/clothing/suit/armor/f13/combat/enclave
+	accessory = 	/obj/item/clothing/accessory/ncr/LT1
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/oasis = 1,
+		/obj/item/gun/energy/laser/plasma/glock = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 3,
+		/obj/item/melee/powered/ripper = 1,)
+
+/datum/outfit/loadout/warmonger
+	name = "Warmonger"
+	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/worn
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced/worn
+	r_hand = /obj/item/gun/ballistic/automatic/service/r82
+
+/datum/outfit/loadout/lineofficer
+	name = "Line Officer"
+	r_hand = /obj/item/gun/ballistic/automatic/m1garand/oldglory
+	l_hand = /obj/item/grenade/f13/plasma
+//Heavy (1 slot, HT equivalent)
 /datum/job/enclave/peacekeeper/armoredtrooper
 	title = "Enclave Heavy"
 	flag = F13EATROOPER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You serve as the backbone of the remaining Enclave combat forces. You may not have your own set of power armour as you once did, but you still have better equipment than the rank-and-file troopers. Keep them in line, and remember, you're often the face of the US Army."
+	description = "You serve as the backbone of the remaining Enclave combat forces. You're respected enough to be entrusted with your own set of power armour. Keep them in line, and remember, you're often the face of the US Army."
 	supervisors = "Enclave officers"
 	display_order = JOB_DISPLAY_ORDER_EATROOPER
 	exp_requirements = 3000
@@ -127,9 +178,10 @@ PEACEKEEPERS
 /datum/outfit/job/enclave/peacekeeper/armoredtrooper
 	name = "Armored Trooper"
 	jobtype = /datum/job/enclave/peacekeeper/armoredtrooper
-	head = /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/x02
+	head = /obj/item/clothing/head/helmet/f13/power_armor/advanced/worn
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/advanced/worn
 	uniform = /obj/item/clothing/under/f13/recon
+	accessory = /obj/item/clothing/accessory/ncr/SGT
 	backpack_contents = list(
 		/obj/item/melee/powered/ripper = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
@@ -189,6 +241,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/standard
 	name = "Standard"
 	backpack_contents = list(
+		/obj/item/clothing/accessory/ncr/TPR
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
@@ -197,6 +250,25 @@ PEACEKEEPERS
 /datum/outfit/loadout/overwatch
 	name = "Overwatch"
 	backpack_contents = list(
+		/obj/item/clothing/accessory/ncr/TPR
+		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
+		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/ammo_casing/energy/plasma/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec=2,)
+
+/datum/outfit/loadout/recstandard
+	name = "Standard Recruit"
+	backpack_contents = list
+		(/obj/item/clothing/accessory/ncr/REC
+		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
+		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
+		/obj/item/ammo_box/magazine/m9mm = 2,)
+
+/datum/outfit/loadout/recoverwatch
+	name = "Overwatch"
+	backpack_contents = list(
+		(/obj/item/clothing/accessory/ncr/REC
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/ammo_casing/energy/plasma/pistol = 1,
