@@ -424,6 +424,11 @@
 	armor = list("melee" = 82.5, "bullet" = 82.5, "laser" = 82.5, "energy" = 35, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 82.5)
 
 //Peacekeeper armor adjust as needed
+
+/obj/item/clothing/suit/armor/f13/power_armor/advanced/worn
+	name = "worn advanced power armor"
+	desc = "An advanced suit of armor typically used by the Enclave. This set has seen better days, and won't offer quite as much protection as it used to."
+	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 25, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 85, "acid" = 0, "wound" = 70)
 /obj/item/clothing/suit/armor/f13/power_armor/x02
 	name = "Enclave power armor"
 	desc = "Upgraded pre-war power armor design used by the Enclave. It is mildly worn due to it's age and lack of maintenance after the fall of the Enclave."

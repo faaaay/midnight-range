@@ -389,6 +389,10 @@
 
 
 //Part of the peacekeeper enclave stuff, adjust values as needed.
+/obj/item/clothing/head/helmet/f13/power_armor/advanced/worn
+	name = "worn advanced power armor"
+	desc = "It's an advanced power armor MK1 helmet, typically used by the Enclave. This set has seen better days, and won't offer quite as much protection as it used to."
+	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 25, "bomb" = 65, "bio" = 100, "rad" = 99, "fire" = 85, "acid" = 0, "wound" = 70)
 /obj/item/clothing/head/helmet/f13/power_armor/x02helmet
 	name = "Enclave power armor helmet"
 	desc = "The Enclave Advanced Powered Combat Armor helmet."
