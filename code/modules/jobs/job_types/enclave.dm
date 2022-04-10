@@ -241,7 +241,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/standard
 	name = "Standard"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/ncr/TPR
+		/obj/item/clothing/accessory/ncr/TPR,
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
@@ -250,7 +250,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/overwatch
 	name = "Overwatch"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/ncr/TPR
+		/obj/item/clothing/accessory/ncr/TPR,
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/ammo_casing/energy/plasma/pistol = 1,
@@ -259,7 +259,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/recstandard
 	name = "Standard Recruit"
 	backpack_contents = list(
-		(/obj/item/clothing/accessory/ncr/REC
+		(/obj/item/clothing/accessory/ncr/REC,
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
@@ -268,7 +268,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/recoverwatch
 	name = "Overwatch"
 	backpack_contents = list(
-		(/obj/item/clothing/accessory/ncr/REC
+		(/obj/item/clothing/accessory/ncr/REC,
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/ammo_casing/energy/plasma/pistol = 1,
