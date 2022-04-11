@@ -54,11 +54,11 @@ PEACEKEEPERS
 
 //Enclave Captain (1 slot, commands from the base)
 /datum/job/enclave/peacekeeper/ecaptain
-	title = "Enclave Lieutenant"
+	title = "Enclave Captain"
 	flag = F13ECOMMANDER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and Senate, but you are often the highest authority when out in the field. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
+	description = "You are one of the last remaining officers in charge of the remaining Enclave. You are the highest-ranking officer in the Enclave's local cell. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
 	supervisors = "what remains of Enclave high command and your own American heart"
 	display_order = JOB_DISPLAY_ORDER_EOFFICER
 	exp_requirements = 4800
@@ -98,7 +98,7 @@ PEACEKEEPERS
 	flag = F13ECOMMANDER
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and Senate, but you are often the highest authority when out in the field. Your main directive is to uphold American values as best you can, and if possible, expand the influence of the Enclave."
+	description = "You are one of the last remaining officers in charge of the remaining Enclave. Your authority is surpassed only by the Captain and \"high command\" on lower floors of the bunker, but you are often the highest authority when out in the field."
 	supervisors = "the Captain and whatever remains of high command"
 	display_order = JOB_DISPLAY_ORDER_EOFFICER
 	exp_requirements = 4800
@@ -259,7 +259,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/recstandard
 	name = "Standard Recruit"
 	backpack_contents = list(
-		(/obj/item/clothing/accessory/ncr/REC,
+		/obj/item/clothing/accessory/ncr/REC,
 		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
@@ -268,7 +268,7 @@ PEACEKEEPERS
 /datum/outfit/loadout/recoverwatch
 	name = "Overwatch"
 	backpack_contents = list(
-		(/obj/item/clothing/accessory/ncr/REC,
+		/obj/item/clothing/accessory/ncr/REC,
 		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/ammo_casing/energy/plasma/pistol = 1,
