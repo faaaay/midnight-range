@@ -6,7 +6,7 @@
 	desc = "(VI) It's good to be emperor."
 	item_state = "that"
 	flags_inv = 0
-	armor = list("tier" = 6, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	strip_delay = 80
 
 /obj/item/clothing/head/powdered_wig
@@ -26,10 +26,10 @@
 
 /obj/item/clothing/head/canada
 	name = "striped red tophat"
-	desc = "(I) It smells like fresh donut holes. / <i>Il sent comme des trous de beignets frais.</i>"
+	desc = "It smells like fresh donut holes. / <i>Il sent comme des trous de beignets frais.</i>"
 	icon_state = "canada"
 	item_state = "canada"
-	armor = list("tier" = 1)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25,)
 
 
 /obj/item/clothing/head/redcoat
@@ -167,7 +167,7 @@
 	icon_state = "chickenhead"
 	item_state = "chickensuit"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
-	armor = list("tier" = 1)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25,)
 
 /obj/item/clothing/head/griffin
 	name = "griffon head"
@@ -181,7 +181,7 @@
 	desc = "Fuzzy."
 	icon_state = "bearpelt"
 	item_state = "bearpelt"
-	armor = list("tier" = 1)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25,)
 
 /obj/item/clothing/head/xenos
 	name = "xenos helmet"
