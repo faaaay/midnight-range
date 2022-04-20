@@ -20,7 +20,7 @@
 
 /obj/item/clothing/suit/redtag
 	name = "red laser tag armor"
-	desc = "(I) A piece of plastic armor. It has sensors that react to blue light."
+	desc = "A piece of plastic armor. It has sensors that react to blue light."
 	icon_state = "redtag"
 	item_state = "redtag"
 	blood_overlay_type = "armor"
@@ -319,7 +319,7 @@
 	item_state = "officertanjacket"
 	body_parts_covered = CHEST|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("tier" = 2)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25)
 
 /obj/item/clothing/suit/ran
 	name = "shikigami costume"
@@ -911,7 +911,7 @@
 	desc = "A big and clanky suit made of bronze that offers no protection and looks very unfashionable. Nice."
 	icon = 'icons/obj/clothing/clockwork_garb.dmi'
 	icon_state = "clockwork_cuirass_old"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20)
 
 /obj/item/clothing/suit/ghost_sheet
 	name = "ghost sheet"
